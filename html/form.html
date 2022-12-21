@@ -11,56 +11,153 @@
 </head>
 
 <body>
-    <form>
+    <!-- <form > -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+        <fieldset>
+            <legend title="it is internship form">internship form</legend>
+            <p>select browser:</p>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+
+            </datalist>
+            <!-- <input type="submit"><br> -->
+            <br> <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First name" autofocus><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="age">Age:</label> <br>
+            <input type="number" id="number" name="age" value="" placeholder="age"> <br>
+
+            <h3>radio button</h3>
+
+            <input type="radio" id="html" name="favlang" value="html">
+            <label for="html">HTML</label> <br>
+
+            <input type="radio" id="css" name="favlang" value="css">
+            <label for="css">CSS</label> <br>
+            <input type="radio" id="js" name="favlang" value="js">
+            <label for="js">Java script </label> <br>
+
+            <h3>checkbox</h3>
+
+            <input type="checkbox" id="v1" name="v1" value="bike">
+            <label for="v1"> I have a bike</label><br>
+            <input type="checkbox" name="v2" id="v2" value="bike">
+            <label for="v2"> I have a car</label> <br>
+
+
+            <input type="checkbox" name="v3" id="v3">
+            <label for="v3">I have boat</label> <br>
+
+            <input type="checkbox" name="v4" id="v4">
+            <label for="v4">I have cycle</label> <br>
+
+            <h3>option</h3>
+
+            <label for="cars" style="color: brown;"> choose your fav car:</label>
+            <!-- <select name="cars" id="car"> -->
+            <select id="cars" name="cars" size="3" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="suzuki">suzuki</option>
+                <option value="audi" selected>audi</option>
+                <option value="honda">honda</option>
+            </select> <br>
+            <hr>
+
+            <textarea name="message" id="mes" cols="30" rows="10"></textarea>
+
+
+
+            <legend>submit:</legend>
+            <br> <input type="submit" value="Submit"> <br>
+            <button type="button" onclick="alert('hello world')">click here</button> <br>
+            <button type="submit">submit here </button>
+
+
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+        </fieldset>
+
+        <label for="username"><b>Username:</b></label> <br>
+        <input type="text" name="username" id="username"> <br>
+        <label for="pwd"><b>Password:</b></label><br>
+        <input type="password" name="pwd" id="pwd"><br>
+        <input type="reset"><br>
+        <label>choose your fav color</label>
+        <input type="color" name="color" id="color"><br><br>
+        <label for="birthday">birthday</label>
+        <input type="date" name="bd" id="bd"><br>
+        <hr>
+        <label for="datemin">datemin</label>
+        <input type="date" name="datmin" id="datmin" min="2002-01-01"><br>
+        <label for="datmax">datemax</label>
+        <input type="date" name="datmax" id="datmax" max="2022"><br>
+
+        <input type="image" src="next.jpg" alt="submit" height="48" width="48">
+        <br>
+        <label for="file">select file</label>
+        <input type="file" name="file" id="f">
+        <br>
+        <hr>
+
+        <label for="mail">email:</label>
+        <input type="email" name="mail" id="mail"><br><br>
+
+        <label for="month">month and year</label>
+        <input type="month" name="month" id="month"><br><br>
+
+        <label for="quantity">Quantity (between 1 to 5)</label>
+        <input type="number" name="" id="" min="1" max="5"><br><br>
+
+        <label for="q">Quantity (10steps)</label>
+        <input type="number" name="" id="" min="0" max="40" step="10" value="20"><br><br>
+
+        <label for="search">Search</label>
+        <input type="search" name="" id=""><br><br>
+        <label for="call">enter a phone number:</label>
+
+        <!-- <input type="tel" name="" id="" placeholder="123-45-66" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br> -->
+
+        <label for="time">Time:</label>
+        <input type="time" name="" id=""><br><br>
+
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week"> <br><br>
 
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <label for="age">Age:</label> <br>
-        <input type="number" id="number" name="age" value=""> <br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
 
-        <h3>radio button</h3>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" minlength="3" size="4"><br><br>
 
-        <input type="radio" id="html" name="favlang" value="html">
-        <label for="html">HTML</label> <br>
-
-        <input type="radio" id="css" name="favlang" value="css">
-        <label for="css">CSS</label> <br>
-        <input type="radio" id="js" name="favlang" value="js">
-        <label for="js">Java script </label> <br>
-
-        <h3>checkbox</h3>
-
-        <input type="checkbox" id="v1" name="v1" value="bike">
-        <label for="v1"> I have a bike</label><br>
-        <input type="checkbox" name="v2" id="v2" value="bike">
-        <label for="v2"> I have a car</label> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="on"><br><br>
+        <label for="Pass">Password:</label>
+        <input type="password" name="" id="">
 
 
-        <input type="checkbox" name="v3" id="v3">
-        <label for="v3">I have boat</label> <br>
-
-        <input type="checkbox" name="v4" id="v4">
-        <label for="v4">I have cycle</label> <br>
-
-        <h3>option</h3>
-
-        <label for="cars" style="color: brown;"> choose your fav car:</label>
-        <!-- <select name="cars" id="car"> -->
-            <select id="cars" name="cars" size="3" multiple>
-        <option value="volvo">Volvo</option>
-        <option value="suzuki">suzuki</option>
-        <option value="audi" selected>audi</option>
-        <option value="honda">honda</option>
-        </select> <br>
-
-       
+        <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
 
 
-
-        <input type="submit" value="Submit"> <br>
+        <br> <br><input type="submit" name="sub"><br>
+        
     </form>
+    <video width="400" height="300" controls> 
+        <source src="GTA_V_-_Official_Story_Trailer(720p).mp4" type="video/mp4">
+    </video>
 </body>
 
 </html>
