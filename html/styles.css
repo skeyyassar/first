@@ -1,24 +1,158 @@
 /* body {
-    background-color: powderblue;
+    background-image: url(animation.gif);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+
+    
+
+/* } */
+/* body {
+    background: powderblue url(animation.gif) no-repeat right top;
 } */
 
-h3 {
-    color: rgb(255, 68, 0);
-}
-
+h1,
 p {
-    border: px solid rgb(0, 19, 227);
-    padding: 10px;
+    color: rgb(86, 71, 255);
 }
 
-/* h1 {
-    color: blueviolet;
+h2 {
+    background-color: chocolate;
+}
+
+/* p {
+    border: 2px dotted;
+    background-color: rgb(249, 249, 156);
+
 } */
 
-h3 {
-    border: 1px solid rgb(230, 176, 176);
+p.dotted {
+    border-style: dotted;
+    border-width: 5px;
+}
+
+p.dashed {
+
+    border-style: dashed;
+    border-width: 5px;
+}
+
+p.solid {
+    border-width: 5px;
+    border-style: solid;
+    border-color: chartreuse red orange black;
+}
+
+
+p.double {
+    /* border-width: 5px 20px; */
+    border-style: double;
 
 }
-blockquote{
-    border: 2px solid rgb(186, 64, 64)
+
+p.groove {
+    border-width: 5px;
+    border-style: groove;
+}
+
+p.ridge {
+    border-width: 5px;
+    border-style: ridge;
+}
+
+p.inset {
+    border-width: 5px;
+    border-style: inset;
+
+}
+
+p.outset {
+
+    border-width: 5px;
+    border-style: outset;
+    border-color: blueviolet;
+}
+
+p.none {
+
+    border-style: none;
+}
+
+p.hidden {
+
+    border-style: hidden;
+}
+
+.hybrid {
+
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+
+}
+
+p.threevalue {
+    border-style: dashed dotted solid;
+    /* middle value prints right and left */
+    border-width: 5px;
+}
+
+p.borderleft {
+    border-left: 6px solid red;
+    background-color: lightgray;
+
+}
+
+p.borderbottom {
+    border-bottom: 5px solid red;
+    background-color: lightgreen;
+
+}
+
+.round1 {
+    border: 2px solid red;
+    border-radius: 5px;
+
+}
+
+.round2 {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.round3 {
+
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.margin {
+    border: 1px solid rgb(47, 238, 255);
+    margin: 70px;
+    text-align: center;
+}
+
+.margin2 {
+    border: 1px solid lightsalmon;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 100px;
+}
+
+.multimargin {
+    border: 2px solid red;
+    margin: 70px 60px 70px 80px;
+}
+
+div {
+    border: 1px solid red;
+    margin: 100px;
+}
+
+.ex1 {
+    margin-left: inherit;
 }
