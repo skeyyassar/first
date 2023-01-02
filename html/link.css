@@ -1,0 +1,122 @@
+/* a {
+    color: hotpink ;
+    
+/* } */
+
+/* a:link {
+    color: red;
+    text-decoration: none;
+}
+a:visited{
+    color: green;
+    text-decoration: underline;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+
+}
+a:active{
+    color: yellow;
+    text-decoration: none;
+} */
+
+/* a:link {
+    background-color: rgb(201, 120, 120);
+    text-decoration: none;
+} */
+
+/* a:visited {
+    background-color: greenyellow;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: aqua;
+    text-decoration: underline;
+
+}
+
+a:active {
+    background-color: yellow;
+    text-decoration: none;
+} */
+
+.a1 {
+    background-color: rgb(237, 99, 99);
+    color: rgb(241, 235, 235);
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.a1:hover {
+    background-color: red;
+}
+
+a.one:link {
+    color: #ff0000;
+}
+
+a.one:visited {
+    color: #0000ff;
+}
+
+a.one:hover {
+    color: #ffcc00;
+}
+
+a.two:link {
+    color: #ff0000;
+}
+
+a.two:visited {
+    color: #0000ff;
+}
+
+a.two:hover {
+    font-size: 5px;
+}
+
+a.three:link {
+    color: #ff0000;
+}
+
+a.three:visited {
+    color: #0000ff;
+}
+
+a.three:hover {
+    background: #66ff66;
+}
+
+a.four:link {
+    color: #ff0000;
+}
+
+a.four:visited {
+    color: #0000ff;
+}
+
+a.four:hover {
+    font-family: monospace;
+}
+
+a.five:link {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a.five:visited {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+a.five:hover {
+    text-decoration: underline;
+}
+ul{
+    list-style-image: url(diamond.gif);
+    height: 1px;
+}

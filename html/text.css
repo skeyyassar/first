@@ -98,6 +98,17 @@ h1.blur {
 /* body {
   font-family: "Sofia", sans-serif;
 } */
-body {
+h1 {
   font-family: "Audiowide", sans-serif;
 }
+p{
+    font: 30px arial sans-sarif;
+}
+i {
+    color: red;
+}
+i.num {
+    color: blue;
+    font-size: 50px;
+}
+

@@ -1,0 +1,28 @@
+ body {
+    background-color: rgb(114, 216, 227);
+}
+
+ #para1{
+    text-align: center;
+}
+
+p { 
+    border: px solid rgb(227, 0, 0);
+    padding: 10px;
+}
+
+ h1 {
+    color: blueviolet;
+} 
+p.a{
+    background-color: rgb(136, 191, 69);
+    text-align: right;
+ font-size: 100px;
+
+ }
+ * {
+     font-style: italic;
+     font-size: 20px;
+     text-align: center;
+ }
+ 
