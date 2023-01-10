@@ -1,0 +1,50 @@
+li {
+    display: inline;
+}
+
+header {
+    
+    background: black;
+    color: #ffffff;
+    height: 100px;
+    position: sticky;
+   z-index: 1;
+    top: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+
+p {
+   
+    border: 2px solid red;
+}
+
+.container {
+    
+    background-color: aqua;
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
+    
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(170, 255, 0);
+    /* position: relative; */
+
+    /* position: absolute; */
+}
+
+.box2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(16, 0, 235);
+    position: relative;
+
+}

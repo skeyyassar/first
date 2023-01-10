@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* body {
+    background-color: lightcyan;
+} */
+
+header {
+    background: #2874f0;
+    /* border: 2px solid red; */
+    /* font-family: 'Lato', sans-serif; */
+
+
+}
+
+nav ul {
+    height: 58px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul li {
+
+    padding: 0 23px;
+    list-style: none;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: black;
+    /* font-weight: bolder; */
+    /* font-size: small; */
+
+}
+
+/* nav ul li a:active{
+    color: grey;
+} */
+
+.search {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.search input {
+    width: 490px;
+    /* height: 23px; */
+    height: 33px;
+    margin: 0 16px 0 56px;
+    border-radius: 5px;
+    padding: 0 12px;
+    border: 0;
+}
+
+.slider {
+    /* margin: auto; */
+    width: 80vw;
+    margin: 12px auto;
+
+}
+
+/* .slider img{
+    border: 2px solid black;
+} */
+
+.card {
+    /* background-color: #90abd7; */
+    max-width: 95vw;
+    margin: auto;
+    border: 1px solid beige;
+    background-color: aqua;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+/* .card-item:hover{
+color: azure;
+} */
+
+/* .card-item img{
+    border: 2px solid black;
+
+} */
+.card h2 {
+    font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+    min-height: calc(100vh - 58px - 15vh);
+}
+
+footer {
+    height: 15vh;
+    background: #2874f0;
+    color: white;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
