@@ -1,0 +1,154 @@
+/* p{
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 3px;
+} */
+
+/* article p:first-of-type {
+    color: red;
+    font-size: 1.5em;
+}
+
+[data-type='primary' s] {
+    color: red;
+} */
+
+/* we can also do this */
+/* [data-type] {
+    color: red;
+  } */
+
+
+
+/* button:active {
+    color: pink;
+    background-color: hotpink;
+}
+
+*:enabled {
+    background-color: rgb(161, 232, 232);
+}
+input:placeholder-shown{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-style: italic;
+} */
+
+/* p:nth-child(odd) {
+    background: rgb(255, 170, 0);
+  } */
+
+/* nav {
+    background-color: #f1f1f1;
+    padding: 1em;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav li:is(.current)>a {
+    color: #fff;
+    background-color: #333;
+    padding: 0.5em 1em;
+}
+
+button {
+    color: aqua;
+}
+
+button {
+
+    background: green;
+    background: blue;
+    font-size: 1.5rem;
+    color: red;
+} */
+/* font-size: clamp(1.5rem, 1rem + 3vw, 2rem); */
+/* bottom css will apply not top one */
+
+/* h1 {
+  color: blue;
+}
+.my-element {
+    color: red;
+  } */
+
+
+/* .current a{
+    color: #fff;
+    background-color: #333;
+    padding: 0.5em 1em;
+} */
+
+
+
+/* div p{
+    color: red; 
+}
+
+div:not(.con) {
+    color: rgb(10, 211, 44);
+  } */
+
+/* #a {
+    color: red;
+}
+
+.o#a {
+    color: blue;
+}
+
+div#a {
+    color: green;
+} */
+
+/* .my-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background: pink;
+    font: inherit;
+    text-align: center;
+}
+
+html {
+    color: lightslategray;
+}
+
+article a {
+    color: maroon;
+} */
+
+/* Global color styles for paragraph in authored CSS */
+
+/* body{
+    background: linear-gradient(to top, #3c006b, #9948d9);
+} */
+p {
+    margin-top: 2em;
+    color: goldenrod;
+    padding: 2em;
+    border: 1px solid red;
+    background-color: gray;
+}
+
+aside p {
+    background-color: unset;
+    color: unset;
+}
+
+article :hover{
+    opacity: 0.8;
+    /* font-size-relative */
+    /* font-weight: bold; */
+    color: rgb(255, 0, 0);
+}
+
+/* Decorative styles */
+aside {
+    margin-top: 2em;
+}

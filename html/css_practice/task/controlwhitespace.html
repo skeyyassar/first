@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.ws-nowrap {
+            white-space: nowrap;
+        }
+
+        /* p.ws-pre {
+            white-space: pre;
+        } */
+
+        p.ws-pre-wrap {
+            white-space: pre-wrap;
+        }
+
+        p.ws-pre-line {
+            white-space: pre-line;
+        }
+
+        p.ws-break-spaces {
+            white-space: break-spaces;
+        }
+
+  
+        p.label {
+            font-size: 10px;
+            font-family: monospace;
+            margin-bottom: 8px;
+        }
+
+        .outer {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            max-width: 100%;
+            width: 100%;
+            align-items: center;
+        }
+
+        .container {
+            padding: 8px;
+            margin: 4px 0;
+            border: 2px solid #555;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="container">
+            <p class="label">white-space: normal</p>
+            <p class="main-text ws-normal">
+                The Salinas Valley is in Northern California.
+
+                It is a long narrow swale between two ranges of mountains, and the Salinas River winds and twists up the
+                center until it falls at last into Monterey Bay. —John Steinbeck
+            </p>
+        </div>
+        <div class="container">
+            <p class="label">white-space: nowrap</p>
+            <p class="main-text ws-nowrap">
+                The Salinas Valley is in Northern California.
+
+                It is a long narrow swale between two ranges of mountains, and the Salinas River winds and twists up the
+                center until it falls at last into Monterey Bay. —John Steinbeck
+            </p>
+        </div>
+        <div class="container">
+            <p class="label">white-space: pre</p>
+            <p class="main-text ws-pre">
+                The Salinas Valley is in Northern California.
+
+                It is a long narrow swale between two ranges of mountains, and the Salinas River winds and twists up the
+                center until it falls at last into Monterey Bay. —John Steinbeck
+            </p>
+        </div>
+        <div class="container">
+            <p class="label">white-space: pre-wrap</p>
+            <p class="main-text ws-pre-wrap">
+                The Salinas Valley is in Northern California.
+
+
+
+                It is a long narrow swale between two ranges of mountains, and the Salinas River winds and twists up the
+                center until it falls at last into Monterey Bay. —John Steinbeck
+            </p>
+        </div>
+        <div class="container">
+            <p class="label">white-space: pre-line</p>
+            <p class="main-text ws-pre-line">
+                The Salinas Valley is in Northern California.
+
+                It is a long narrow swale between two ranges of mountains, and the Salinas River winds and twists up the
+                center until it falls at last into Monterey Bay. —John Steinbeck
+            </p>
+        </div>
+        <div class="container">
+            <p class="label">white-space: break-spaces</p>
+            <p class="main-text ws-break-spaces">
+                The Salinas Valley is in Northern California.
+
+                It is a long narrow swale between two ranges of mountains, and the Salinas River winds and twists up the
+                center until it falls at last into Monterey Bay. —John Steinbeck
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

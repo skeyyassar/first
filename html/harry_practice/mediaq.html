@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media q</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 34vh;
+        }
+
+        @media screen and (max-width: 800px) {
+            body {
+                background-color: rgb(89, 255, 0);
+            }
+
+            .container {
+                background-color: rgb(164, 164, 28);
+            }
+
+            @media screen and (max-width: 400px) {
+                body {
+                    background-color: rgb(147, 187, 98);
+                    color: white;
+                    text-align: center;
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde natus quibusdam tempore enim esse, modi
+        quaerat? Voluptatum at, doloribus in mollitia corrupti veritatis optio ducimus, culpa corporis repellendus
+        voluptas, aspernatur porro delectus aliquam!
+    </div>
+
+</body>
+
+</html>

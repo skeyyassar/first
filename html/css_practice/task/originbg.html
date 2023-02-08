@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #containerOfDemoBoxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 5%;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .demo-box {
+            border: 0.5px solid hsla(0deg, 0%, 60%, 0.5);
+            aspect-ratio: 1/1;
+            background: url("https://images.unsplash.com/photo-1524272332618-3a94122bb0c1?auto=format&fit=crop&w=690&q=80%27");
+            /* have background-size be within reason within the bounds of box but still allow regular tiling to occur on applicable images */
+            background-size: contain;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            border: 8px dashed hsla(10deg, 40%, 70%, 0.75);
+            padding: 2rem;
+        }
+
+        .demo {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .demo-label {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.825rem;
+            color: hsl(0, 0%, 38%);
+        }
+
+        #demoBox1 {
+            background-origin: border-box;
+        }
+
+        #demoBox2 {
+            background-origin: content-box;
+        }
+
+        #demoBox3 {
+            background-origin: padding-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Configuring the background-origin of backgrounds within a CSS Box</h2>
+        <div id="containerOfDemoBoxes">
+
+            <div class="demo">
+                <div id="demoBox1" class="demo-box"></div>
+                <span class="demo-label">
+                    <code>background-origin: border-box</code>
+                </span>
+            </div>
+
+            <div class="demo">
+                <div id="demoBox2" class="demo-box"></div>
+                <span class="demo-label">
+                    <code>background-origin: content-box</code>
+                </span>
+            </div>
+
+            <div class="demo">
+                <div id="demoBox3" class="demo-box"></div>
+                <span class="demo-label">
+                    <code>background-origin: padding-box</code>
+                </span>
+            </div>
+
+            <div id="keywordPanel" class="configuration-panel">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

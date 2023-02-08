@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.horizontal-tb {
+            writing-mode: horizontal-tb;
+        }
+
+        p.vertical-lr {
+            writing-mode: vertical-lr;
+        }
+
+        p.vertical-rl {
+            writing-mode: vertical-rl;
+        }
+
+        .outer {
+            max-width: 75%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="container">
+            <p class="label">writing-mode: horizontal-tb</p>
+            <p class="main-text horizontal-tb">The Salinas Valley is in Northern California. It is a long narrow swale
+                between two ranges of mountains, and the Salinas River winds and twists up the center until it falls at
+                last into Monterey Bay.</p>
+        </div>
+        <div class="container">
+            <p class="label">writing-mode: vertical-lr</p>
+            <p class="main-text vertical-lr">ᠰᠠᠯᠢᠨᠢᠰ ᠤᠨ ᠬᠥᠨᠳᠡᠢ ᠨᠢ ᠬᠣᠶᠢᠳ ᠺᠠᠯᠢᠹᠣᠷᠨᠢᠳ ᠪᠠᠶᠢᠳᠠᠭ᠃ ᠡᠨᠡ ᠨᠢ ᠬᠣᠶᠠᠷ ᠨᠢᠷᠤᠭᠤᠨ ᠤ
+                ᠬᠣᠭᠣᠷᠣᠨᠳᠣᠬᠢ ᠤᠷᠲᠤ ᠨᠠᠷᠢᠬᠠᠨ ᠬᠠᠪᠴᠢᠯ ᠪᠥᠭᠡᠳ ᠰᠠᠯᠢᠨᠠᠰ ᠭᠣᠣᠯ ᠨᠢ ᠰᠠᠯᠬᠢᠯᠠᠵᠤ᠂ ᠲᠥᠪ ᠢ ᠨᠢ ᠡᠷᠭᠢᠭᠦᠯᠵᠦ᠂ ᠡᠴᠦᠰ ᠲᠦ ᠨᠢ
+                ᠮᠣᠨᠲ᠋ᠧᠷᠧᠢ ᠪᠤᠯᠤᠨ ᠷᠤ ᠤᠨᠠᠳᠠᠭ᠃</p>
+        </div>
+        <div class="container">
+            <p class="label">writing-mode: vertical-rl</p>
+            <p class="main-text vertical-rl">サリナスバレーは北カリフォルニアにあります。
+                それは2つの山脈の間の長く狭い湿地であり、brサリナス川は中央を曲がりくねってねじれ、ついにモントレー湾に流れ込みます。</p>
+        </div>
+    </div>
+</body>
+
+</html>
