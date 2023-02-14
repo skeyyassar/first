@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="shopping, shop, clothing, outfit, electronics, fashion, resonable prices, fast delivery">
+    <meta name="keywords"
+        content="shopping, shop, clothing, outfit, electronics, fashion, resonable prices, fast delivery">
     <title>task one</title>
     <link rel="stylesheet" href="assets/css/task1.css">
     <link rel="stylesheet" href="assets/css/media.css">
@@ -20,27 +21,26 @@
 
 <body>
     <header>
+        <img src="assets/img/jaguar sym.png">
         <nav>
-            <!-- <div class="d_button"> -->
-            <!-- <button class="dropdown">
-                </button> -->
-            </div>
+            <input class="search" type="search" name="q" placeholder="search here what you want..."/>
+            <input class="search_button" type="submit" value="search" style="color: black; background: gold;"/>
 
-            <!-- </div> -->
-            <input type="search" name="q" placeholder="search here what you want...">
-            <input type="submit" value="search" style="color: black; background: gold;">
-            <!-- <button>search</button> -->
             <div class="dropdown">
                 dropdown
                 <div class="dropdown-content">
-                    <a class="dropdown_list" href="#services">services</a>
-                    <a class="dropdown_list" href="#team">our team</a>
-                    <a class="dropdown_list" href="#address">address</a>
+                    <div class="navbar">
+                        <a class="dropdown_list" href="#services">services</a>
+                        <a class="dropdown_list" href="#team">our team</a>
+                        <a class="dropdown_list" href="#address">address</a>
+                    </div>
                 </div>
             </div>
-            <a href="#" class="home">Home</a>
-            <a href="#contact">contact us</a>
-            <a href="#">about</a>
+            <a href="#home" id="home">Home</a>
+            <nobr>
+                <a href="#contact"> contact us</a>
+            </nobr>
+            <!-- <a href="#">about</a> -->
 
         </nav>
     </header>
@@ -68,32 +68,32 @@
             <div class="light_box">
 
                 <a href="#img1">
-                  <img src="assets/img/1200x500.jpeg">
+                    <img src="assets/img/1200x500.jpeg">
                 </a>
                 <a href="#img2">
-                  <img src="assets/img/1200x500a.jpeg">
+                    <img src="assets/img/1200x500a.jpeg">
                 </a>
                 <a href="#img3">
-                  <img src="assets/img/bmw wheel.jpeg">
+                    <img src="assets/img/bmw wheel.jpeg">
                 </a>
                 <a href="#img4">
-                  <img src="assets/img/green car.jpeg">
+                    <img src="assets/img/green car.jpeg">
                 </a>
-                
+
                 <a class="lightbox" id="img1"><button>Close</button>
-                  <span style="background-image: url('assets/img/1200x500.jpeg')"></span>
+                    <span style="background-image: url('assets/img/1200x500.jpeg')"></span>
                 </a>
                 <a class="lightbox" id="img2"><button>Close</button>
-                  <span style="background-image: url('assets/img/1200x500a.jpeg')"></span>
+                    <span style="background-image: url('assets/img/1200x500a.jpeg')"></span>
                 </a>
                 <a class="lightbox" id="img3"><button>Close</button>
-                  <span style="background-image: url('assets/img/bmw wheel.jpeg')"></span>
+                    <span style="background-image: url('assets/img/bmw wheel.jpeg')"></span>
                 </a>
                 <a class="lightbox" id="img4"><button>Close</button>
-                  <span style="background-image: url('assets/img/green car.jpeg')"></span>
+                    <span style="background-image: url('assets/img/green car.jpeg')"></span>
                 </a>
-                
-              </div>
+
+            </div>
         </div>
         <div class="container">
             <h2>best footwear</h2>
@@ -323,12 +323,31 @@
             </div> -->
             <div class="team">
                 <img class="service" src="assets/img/Uempolye3.jpg" alt="">
-                <h3>natasha starkf</h3>
+                <h3>natasha stark</h3>
                 <h4>full stack developer</h4>
                 <h5>natasha@gmail.com</h5>
             </div>
         </div>
 
+        <h2>reviews</h2>
+        <div class="feedback">
+            <div class="f1">
+                <img src="assets/img/user2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquam!</p>
+            </div>
+            <div class="f1">
+                <img src="assets/img/user2.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, possimus.</p>
+            </div>
+            <div class="f1">
+                <img src="assets/img/user2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus!</p>
+            </div>
+            <div class="f1">
+                <img src="assets/img/user2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus!</p>
+            </div>
+        </div>
 
 
         <div class="contact" id="contact">

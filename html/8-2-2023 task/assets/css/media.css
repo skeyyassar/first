@@ -1,0 +1,59 @@
+/* for tablets  */
+@media screen and (max-width: 995px) {
+    header {
+        background: orange;
+    }
+
+    /* header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    } */
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .search_button {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .container .item {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    nav input{
+        width: 15vw;
+    }
+    /* nav {
+        background: #000;
+    } */
+
+    /* nav input~input {
+        display: block;
+        flex-wrap: wrap;
+    } */
+    /* nav input{
+        width: 200px;
+    } */
+}
+@media screen and (max-width:768px) {
+   .team .service {
+        width: 100px;
+        height: 100px;
+    }
+    .team {
+        width: 200px;
+        height: 300px;
+    }
+}
