@@ -7,22 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
-        content="shopping, shop, clothing, outfit, electronics, fashion, resonable prices, fast delivery">
+        content="shopping, shop, clothing, outfit, electronics, fashion, reasonable prices, fast delivery">
     <title>task one</title>
     <link rel="stylesheet" href="assets/css/task1.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/hamburger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&family=Sofia+Sans+Semi+Condensed:ital,wght@1,100;1,200&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <img src="assets/img/jaguar sym.png">
         <nav>
+            <input type="checkbox" name="nav" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button-container">
+                <div class="menu-button"></div>
+            </label>
             <input class="search" type="search" name="q" placeholder="search here what you want..." />
             <input class="search_button" type="submit" value="search" style="color: black; background: gold;" />
 
@@ -40,10 +44,41 @@
             <nobr>
                 <a href="#contact"> contact us</a>
             </nobr>
-            <!-- <a href="#">about</a> -->
-
+    
         </nav>
-    </header>
+    </header> -->
+    <section class="top-nav">
+        <div>
+            <img src="assets/img/jaguar sym.png">
+        </div>
+        <input class="search" type="search" name="q" placeholder="search here what you want..." />
+        <input class="search_button" type="submit" value="search" style="color: black; background: gold;" />
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <!--div="navbar"      -->
+        <ul class="menu">
+            <li><div class="dropdown">
+                dropdown
+                <div class="dropdown-content">
+                    <div class="navbar">
+                        <a class="dropdown_list" href="#services">services</a>
+                        <a class="dropdown_list" href="#team">our team</a>
+                        <a class="dropdown_list" href="#address">address</a>
+                    </div>
+                </div>
+            </div></li>
+            <li><a href="#home" id="home">Home</a></li>
+            <li><nobr>
+                <a href="#contact"> contact us</a>
+            </nobr></li>
+            <!-- <li></li> -->
+            <!-- <li><a href="">Five</a> </li> -->
+        </ul>
+        <!--</div>-->
+    </section>
+
     <main>
 
         <div class="slider">
@@ -273,9 +308,9 @@
                 </p>
             </div>
             <div class="r">
-                <h3>resonable price</h3>
+                <h3>reasonable price</h3>
                 <img class="service" src="assets/img/price.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quod eum atque obcaecati dolorum
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quod eum atque
                 </p>
             </div>
 
@@ -386,7 +421,7 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
         copy right &#169 by yassar
     </footer>
 
