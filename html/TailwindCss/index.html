@@ -5,11 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/index.css">
     <link rel="stylesheet" href="assets/main.css">
     <title>Tailwind Css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .slider img {
+            width: 100vw;
+        }
+    </style>
 </head>
 
-<body class="bg-white dark:bg-gray-900 text-white">
+<body class="bg-white dark:bg-gray-900 text-white capitalize">
     <section class="bg-orange-400 h-16 pt-4">
 
         <!-- <input id="menu-toggle" type="checkbox" />
@@ -45,36 +59,49 @@
     </section>
 
     <!-- slider -->
-    <div class=" animate-slider-animation">
+    <div class="slider animate-slider-animation max-w-7xl">
         <div class="flex">
             <div>
-                <img class="w-full" src="assets/img/1200x500.jpeg" alt="">
+                <img class="max-w-screen-xl" src="assets/img/1200x500.jpeg" alt="">
             </div>
             <div>
-                <img class="w-full" src="assets/img/1200x500a.jpeg" alt="">
+                <img class="max-w-screen-xl" src="assets/img/1200x500a.jpeg" alt="">
             </div>
             <div>
-                <img class="w-full" src="assets/img/yellow.jpeg" alt="">
+                <img class="max-w-screen-xl" src="assets/img/yellow.jpeg" alt="">
             </div>
             <div>
-                <img class="w-full" src="assets/img/green car.jpeg" alt="">
+                <img class="max-w-screen-xl" src="assets/img/green car.jpeg" alt="">
             </div>
         </div>
     </div>
     <!-- light box -->
-    <h2 style="text-align: center;">light box </h2>
-    <div class="flex">
+    <h2 class="text-center text-xl">light box </h2>
+    <div class="">
 
-        <button onclick="javascript(0)" href="" class="group focus:h-screen focus:w-screen focus:bg-black/80">
-            <img class="group-focus:h-4/5 group-focus:z-10 group-focus:w-4/5 h-96 w-96"
-                src="assets/img/1200x500.jpeg"><button class=" text-2xl  text-white z-10 group-focus:visible">x</button>
-            </button>
+        <button
+            class="focus:text-2xl float-right focus:float-right text-2xl focus:visible border-2 border-black mr-4 ">x</button>
 
+        <button onclick="javascript(0)" class=" group focus:h-screen focus:w-full focus:bg-black/80">
+            <img class="w-96 float-none group-focus:w-full group-focus:h-screen group-focus:z-10" src="assets/img/1200x500.jpeg">
+        </button>
+        <!-- <button
+        class="focus:text-2xl float-right focus:float-right text-2xl focus:visible border-2 border-black mr-4 ">x</button> -->
+
+
+        <!-- <button onclick="javascript(0)" class="group focus:h-screen focus:w-screen focus:bg-black/80">
+            <img class="group-focus:w-screen group-focus:h-screen group-focus:z-10 w-2/4"
+                src="assets/img/1200x500a.jpeg"><button class="text-2xl  text-white z-10 group-focus:visible">x</button>
+        </button>
+        <button onclick="javascript(0)" class="group focus:h-screen focus:w-screen focus:bg-black/80">
+            <img class="group-focus:w-screen group-focus:h-screen group-focus:z-10 w-2/4"
+                src="assets/img/bmw wheel.jpeg"><button class="text-2xl  text-white z-10 group-focus:visible">x</button>
+        </button> -->
     </div>
 
     <!-- items -->
     <div class="m-7">
-        <h2 class="pl-3.5 pb-0 text-sm">best footwear</h2>
+        <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
 
         <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
             <div class="m-3 hover:opacity-50">
@@ -108,7 +135,7 @@
         </div>
     </div>
     <div class="m-7">
-        <h2 class="pl-3.5 pb-0 text-sm">best footwear</h2>
+        <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
 
         <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
             <div class="m-3 hover:opacity-50">
@@ -143,7 +170,7 @@
     </div>
 
     <div class="m-7">
-        <h2 class="pl-3.5 pb-0 text-sm">best footwear</h2>
+        <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
 
         <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
             <div class="m-3 hover:opacity-50">
@@ -178,7 +205,7 @@
     </div>
     <!-- SERVICESS -->
     <div>
-        <h2 class="text-base text-center" id="services">services</h2>
+        <h2 class="text-center text-xl" id="services">services</h2>
     </div>
 
     <div class="flex justify-center">
@@ -205,7 +232,7 @@
         </div>
     </div>
     <!-- team member -->
-    <h2 id="team">Our team</h2>
+    <h2 id="team" class="text-center text-xl">Our team</h2>
     <div class="flex justify-center">
         <div class="inline-block justify-center p-3 rounded-md m-3.5 w-72 h-96"><!--tea.m-->
             <img class="block m-auto rounded-md w-64" src="assets/img/Uemploye1.jpg" alt=""> <!--service-->
@@ -229,22 +256,22 @@
 
     <!-- feedback -->
 
-    <h2>reviews</h2>
+    <h2 class="text-center text-xl max-sm:text-lg">reviews</h2>
     <div class="flex justify-center text-black">
-        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72">
-            <img class="rounded-full w-12 " src="assets/img/user2.png" alt="">
+        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:grid">
+            <img class="rounded-full w-12 max-sm:ml-auto max-sm:mr-auto" src="assets/img/user2.png" alt="">
             <p class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquam!</p>
         </div>
-        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72">
-            <img class="rounded-full w-12 " src="assets/img/user2.png" alt="">
+        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:grid">
+            <img class="rounded-full w-12 max-sm:ml-auto max-sm:mr-auto" src="assets/img/user2.png" alt="">
             <p class="font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, possimus.</p>
         </div>
-        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72">
-            <img class="rounded-full w-12 " src="assets/img/user2.png" alt="">
+        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:grid">
+            <img class="rounded-full w-12 max-sm:ml-auto max-sm:mr-auto" src="assets/img/user2.png" alt="">
             <p class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus!</p>
         </div>
-        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72">
-            <img class="rounded-full w-12 " src="assets/img/user2.png" alt="">
+        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:grid">
+            <img class="rounded-full w-12 max-sm:ml-auto max-sm:mr-auto" src="assets/img/user2.png" alt="">
             <p class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus!</p>
         </div>
     </div>
@@ -258,37 +285,37 @@
     </div>
 
     <!-- contact form -->
-    <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-md">
-            <h2 id="contact" class="mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white">Contact Us
+    <section class="">
+        <div class="border-2 border-gray-500 py-8 px-4 mx-auto max-w-screen-md mb-2 dark:bg-slate-900 md:border-none">
+            <h2 id="contact" class="mb-4 text-4xl font-black text-center text-white">Contact Us
             </h2>
-            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical
+            <p class="mb-8 text-center sm:text-xl">Got a technical
                 issue? Want to send feedback? Need details about our Business plan? Let us know.
             </p>
-            <form class="space-y-8">
+            <form class="space-y-10">
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                         email</label>
                     <input type="email" id="email"
-                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                        placeholder="name@flowbite.com" required>
+                        class="block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 rounded-lg"
+                        placeholder="name@gmail.com" required>
                 </div>
                 <div>
                     <label for="subject"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
                     <input type="text" id="subject"
-                        class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                        class="block p-3 w-full text-sm bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 rounded-lg shadow-sm-light"
                         placeholder="Let us know how we can help you" required>
                 </div>
                 <div class="sm:col-span-2">
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
                         message</label>
                     <textarea id="message" rows="6"
-                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                        class="block rounded-lg p-2.5 w-full text-sm bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-900"
                         placeholder="Leave a comment..."></textarea>
                 </div>
                 <button type="submit"
-                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-orange-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
                     message</button>
             </form>
         </div>

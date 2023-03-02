@@ -12,8 +12,9 @@ module.exports = {
         },
       },
       animation:{
-        'slider-animation':'yasar 16s infinite'
+        'slider-animation':'yasar 10s infinite'
       },
+    
     },
   },
   plugins: [],
