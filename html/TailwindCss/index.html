@@ -24,25 +24,29 @@
 </head>
 
 <body class="bg-white dark:bg-gray-900 text-white capitalize">
-    <section class="bg-orange-400 h-16 pt-4">
+    <!-- nav  bar -->
+    <!-- <input id="menu-toggle" type="checkbox" />
+    <labelenu-button-container' for="menu-toggle"> -->
+    <!-- <div></div>
+    </label> -->
+    <section class="top_nav bg-orange-400 h-16 pt-4"><!--TOP-NAV-->
+        <input class="" id="menu-toggle" type="checkbox" /><!--id="menu-toggle"-->
+        <label class="menu-button-container" for="menu-toggle"><!--class='menu-button-container' -->
+            <div class="menu-button"></div><!-- class=''-->
+        </label>
+        <!-- <div class="float-right"> -->
 
-        <!-- <input id="menu-toggle" type="checkbox" />
-        <labelenu-button-container' for="menu-toggle"> -->
-        <!-- <div></div>
-        </label> -->
-        <div class="float-right">
-
-            <ul class="flex">
+            <ul class="menu flex"><!--MENU-->
                 <li>
-                    <div class="group mr-5">
+                    <div class="dropdown group mr-5"><!--dropdown-->
                         dropdown
-                        <div>
-                            <div class="min-w-40 hidden group-hover:block bg-white text-black rounded-md z-10 absolute">
-                                <a class="list-item list-none p-5 rounded-md hover:bg-orange-300"
+                        <div class="dropdown_content"> <!--dropdown_content-->
+                            <div class="navbar min-w-40 hidden group-hover:block bg-white text-black rounded-md z-10 absolute"><!--navbar-->
+                                <a class="dropdown_list list-item list-none p-5 rounded-md hover:bg-orange-300"
                                     href="#services">services</a>
-                                <a class="list-item list-none p-5 rounded-md hover:bg-orange-300" href="#team">our
+                                <a class="dropdown_list list-item list-none p-5 rounded-md hover:bg-orange-300" href="#team">our
                                     team</a>
-                                <a class="list-item list-none p-5 rounded-md hover:bg-orange-300"
+                                <a class="dropdown_list list-item list-none p-5 rounded-md hover:bg-orange-300"
                                     href="#address">address</a>
                             </div>
                         </div>
@@ -55,7 +59,7 @@
                     </nobr>
                 </li>
             </ul>
-        </div>
+        <!-- </div> -->
     </section>
 
     <!-- slider -->
@@ -77,13 +81,13 @@
     </div>
     <!-- light box -->
     <h2 class="text-center text-xl">light box </h2>
-    <div class="">
+    <div>
 
-        <button
-            class="focus:text-2xl float-right focus:float-right text-2xl focus:visible border-2 border-black mr-4 ">x</button>
+        <button class="focus:text-2xl float-right focus:float-right text-2xl focus:visible border-2 border-black mr-4
+">x</button>
 
-        <button onclick="javascript(0)" class=" group focus:h-screen focus:w-full focus:bg-black/80">
-            <img class="w-96 float-none group-focus:w-full group-focus:h-screen group-focus:z-10" src="assets/img/1200x500.jpeg">
+        <button onclick="javascript(0)" class="group focus:w-full focus:bg-black/80 max-md:w-screen ">
+            <img class="w-96 float-none group-focus:w-full group-focus:z-10 max-md:w-64" src="assets/img/1200x500.jpeg">
         </button>
         <!-- <button
         class="focus:text-2xl float-right focus:float-right text-2xl focus:visible border-2 border-black mr-4 ">x</button> -->
@@ -100,178 +104,195 @@
     </div>
 
     <!-- items -->
-    <div class="m-7">
-        <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
+    <!-- <div class="items">
 
-        <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
-            <div class="m-3 hover:opacity-50">
-                <a href="boots.html"><img class="rounded-md" src="https://source.unsplash.com/160x160?nike" alt=""></a>
-                <p class="text-center text-base">jordan</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?hills" alt="">
-                <p class="text-center text-base">Nike</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?shoes" alt="">
-                <p class="text-center text-base">bata</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?boots" alt="">
-                <p class="text-center text-base">boots</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?sandles" alt="">
-                <p class="text-center text-base">sandles</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
-                <p class="text-center text-base">slipper</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
-                <p class="text-center text-base">slipper</p>
+        <div class="m-7">
+            <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
+
+            <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
+                <div class="m-3 hover:opacity-50">
+                    <a href="boots.html"><img class="rounded-md" src="https://source.unsplash.com/160x160?nike"
+                            alt=""></a>
+                    <p class="text-center text-base">jordan</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?hills" alt="">
+                    <p class="text-center text-base">Nike</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?shoes" alt="">
+                    <p class="text-center text-base">bata</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?boots" alt="">
+                    <p class="text-center text-base">boots</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?sandles" alt="">
+                    <p class="text-center text-base">sandles</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
+                    <p class="text-center text-base">slipper</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
+                    <p class="text-center text-base">slipper</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="m-7">
-        <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
+        <div class="m-7">
+            <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
 
-        <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
-            <div class="m-3 hover:opacity-50">
-                <a href="boots.html"><img class="rounded-md" src="https://source.unsplash.com/160x160?nike" alt=""></a>
-                <p class="text-center text-base">jordan</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?hills" alt="">
-                <p class="text-center text-base">Nike</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?shoes" alt="">
-                <p class="text-center text-base">bata</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?boots" alt="">
-                <p class="text-center text-base">boots</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?sandles" alt="">
-                <p class="text-center text-base">sandles</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
-                <p class="text-center text-base">slipper</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
-                <p class="text-center text-base">slipper</p>
+            <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
+                <div class="m-3 hover:opacity-50">
+                    <a href="boots.html"><img class="rounded-md" src="https://source.unsplash.com/160x160?nike"
+                            alt=""></a>
+                    <p class="text-center text-base">jordan</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?hills" alt="">
+                    <p class="text-center text-base">Nike</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?shoes" alt="">
+                    <p class="text-center text-base">bata</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?boots" alt="">
+                    <p class="text-center text-base">boots</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?sandles" alt="">
+                    <p class="text-center text-base">sandles</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
+                    <p class="text-center text-base">slipper</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
+                    <p class="text-center text-base">slipper</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="m-7">
-        <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
+        <div class="m-7">
+            <h2 class="pl-3.5 pb-0 text-center text-xl">best footwear</h2>
 
-        <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
-            <div class="m-3 hover:opacity-50">
-                <a href="boots.html"><img class="rounded-md" src="https://source.unsplash.com/160x160?nike" alt=""></a>
-                <p class="text-center text-base">jordan</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?hills" alt="">
-                <p class="text-center text-base">Nike</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?shoes" alt="">
-                <p class="text-center text-base">bata</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?boots" alt="">
-                <p class="text-center text-base">boots</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?sandles" alt="">
-                <p class="text-center text-base">sandles</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
-                <p class="text-center text-base">slipper</p>
-            </div>
-            <div class="m-3 hover:opacity-50">
-                <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
-                <p class="text-center text-base">slipper</p>
+            <div class="flex justify-center flex-wrap m-7 bg-slate-500 p-8 rounded-md">
+                <div class="m-3 hover:opacity-50">
+                    <a href="boots.html"><img class="rounded-md" src="https://source.unsplash.com/160x160?nike"
+                            alt=""></a>
+                    <p class="text-center text-base">jordan</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?hills" alt="">
+                    <p class="text-center text-base">Nike</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?shoes" alt="">
+                    <p class="text-center text-base">bata</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?boots" alt="">
+                    <p class="text-center text-base">boots</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?sandles" alt="">
+                    <p class="text-center text-base">sandles</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
+                    <p class="text-center text-base">slipper</p>
+                </div>
+                <div class="m-3 hover:opacity-50">
+                    <img class="rounded-md" src="https://source.unsplash.com/160x160?slipper" alt="">
+                    <p class="text-center text-base">slipper</p>
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- SERVICESS -->
     <div>
         <h2 class="text-center text-xl" id="services">services</h2>
     </div>
 
-    <div class="flex justify-center">
-        <div class="inline justify-center p-3 rounded-md bg-slate-400 m-3.5 h-64 w-64">
-            <h3>fast delivery</h3>
-            <img class="p-3 rounded-full w-20" src="assets/img/fastD.jpg" alt="">
+    <div class="flex justify-center max-md:block">
+        <div
+            class="inline justify-center p-3 rounded-md bg-slate-400 m-3.5 h-64 w-64 max-md:block max-md:ml-auto max-md:mr-auto">
+            <h3 class="text-center">fast delivery</h3>
+            <img class="p-3 rounded-full w-20 mr-auto ml-auto" src="assets/img/fastD.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat porro corrupti illum aperiam hic,
                 natus
             </p>
         </div>
-        <div class="inline justify-center p-3 rounded-md bg-slate-400 m-3.5 h-64 w-64">
-            <h3>reasonable price</h3>
-            <img class="p-3 rounded-full w-20" src="assets/img/price.jpg" alt="">
+        <div
+            class="inline justify-center p-3 rounded-md bg-slate-400 m-3.5 h-64 w-64 max-md:block max-md:ml-auto max-md:mr-auto">
+            <h3 class="text-center">reasonable price</h3>
+            <img class="p-3 rounded-full w-20 mr-auto ml-auto" src="assets/img/price.jpg" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quod eum atque
             </p>
         </div>
 
 
-        <div class="inline justify-center p-3 rounded-md bg-slate-400 m-3.5 h-64 w-64">
-            <h3>time saving</h3>
-            <img class="p-3 rounded-full w-20" src="assets/img/timeEDIT.jpg" alt="">
+        <div
+            class="inline justify-center p-3 rounded-md bg-slate-400 m-3.5 h-64 w-64 max-md:block max-md:ml-auto max-md:mr-auto">
+            <h3 class="text-center">time saving</h3>
+            <img class="p-3 rounded-full w-20 mr-auto ml-auto" src="assets/img/timeEDIT.jpg" alt="">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore adipisci nobis similique quod
             </p>
         </div>
     </div>
+
     <!-- team member -->
-    <h2 id="team" class="text-center text-xl">Our team</h2>
-    <div class="flex justify-center">
-        <div class="inline-block justify-center p-3 rounded-md m-3.5 w-72 h-96"><!--tea.m-->
+    <h2 id="team" class="text-center text-xl">Our team member</h2>
+    <div class="flex justify-center max-md:block">
+        <div
+            class="inline-block  bg-slate-500 justify-center p-3 rounded-md m-3.5 w-72 max-md:block max-md:mr-auto max-md:ml-auto">
+            <!--tea.m-->
             <img class="block m-auto rounded-md w-64" src="assets/img/Uemploye1.jpg" alt=""> <!--service-->
-            <h3 class="flex justify-center">shehzad luhar</h3>
-            <h4 class="flex justify-center">backend developer</h4>
-            <h5 class="flex justify-center">shezad@gmail.com</h5>
+            <h3 class="flex justify-center my-3 max-sm:text-sm">shehzad luhar</h3>
+            <h4 class="flex justify-center my-3 max-sm:text-sm">backend developer</h4>
+            <h5 class="flex justify-center my-3 max-sm:text-sm">shezad@gmail.com</h5>
+            <button class="flex m-auto bg-orange-400 hover:bg-orange-500 px-5 py-1 rounded-md ">contact</button>
         </div>
-        <div class="inline-block justify-center p-3 rounded-md m-3.5 w-72 h-96">
+        <div
+            class="inline-block  bg-slate-500 justify-center p-3 rounded-md m-3.5 w-72 max-md:block max-md:mr-auto max-md:ml-auto">
             <img class="block m-auto rounded-md w-64" src="assets/img/Uempolye2.jpg" alt=""> <!--service-->
-            <h3 class="flex justify-center">nikhil rajput</h3>
-            <h4 class="flex justify-center">frontend developer</h4>
-            <h5 class="flex justify-center">nikhil@gmail.com</h5>
+            <h3 class="flex justify-center my-3 max-sm:text-sm">nikhil rajput</h3>
+            <h4 class="flex justify-center my-3 max-sm:text-sm">frontend developer</h4>
+            <h5 class="flex justify-center my-3 max-sm:text-sm">nikhil@gmail.com</h5>
+            <button class="flex m-auto  bg-orange-400 hover:bg-orange-500  px-5 py-1 rounded-md ">contact</button>
         </div>
-        <div class="inline-block justify-center p-3 rounded-md m-3.5 w-72 h-96">
+        <div
+            class="inline-block  bg-slate-500 justify-center p-3 rounded-md m-3.5 w-72 max-md:block max-md:mr-auto max-md:ml-auto">
             <img class="block m-auto rounded-md w-64" src="assets/img/Uempolye3.jpg" alt=""><!--service-->
-            <h3 class="flex justify-center">natasha stark</h3>
-            <h4 class="flex justify-center">full stack developer</h4>
-            <h5 class="flex justify-center">natasha@gmail.com</h5>
+            <h3 class="flex justify-center my-3 max-sm:text-sm">natasha stark</h3>
+            <h4 class="flex justify-center my-3 max-sm:text-sm">full stack developer</h4>
+            <h5 class="flex justify-center my-3 max-sm:text-sm">natasha@gmail.com</h5>
+            <button class="flex m-auto  bg-orange-400 hover:bg-orange-500  px-5 py-1 rounded-md ">contact</button>
         </div>
     </div>
 
     <!-- feedback -->
 
     <h2 class="text-center text-xl max-sm:text-lg">reviews</h2>
-    <div class="flex justify-center text-black">
-        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:grid">
-            <img class="rounded-full w-12 max-sm:ml-auto max-sm:mr-auto" src="assets/img/user2.png" alt="">
+    <div class="flex justify-center text-black max-sm:grid">
+        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:block ">
+            <img class="rounded-full w-12 block ml-auto mr-auto" src="assets/img/user2.png" alt="">
             <p class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquam!</p>
         </div>
-        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:grid">
-            <img class="rounded-full w-12 max-sm:ml-auto max-sm:mr-auto" src="assets/img/user2.png" alt="">
+        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:block ">
+            <img class="rounded-full w-12 block ml-auto mr-auto" src="assets/img/user2.png" alt="">
             <p class="font-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, possimus.</p>
         </div>
-        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:grid">
-            <img class="rounded-full w-12 max-sm:ml-auto max-sm:mr-auto" src="assets/img/user2.png" alt="">
+        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:block ">
+            <img class="rounded-full w-12 block ml-auto mr-auto" src="assets/img/user2.png" alt="">
             <p class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus!</p>
         </div>
-        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:grid">
-            <img class="rounded-full w-12 max-sm:ml-auto max-sm:mr-auto" src="assets/img/user2.png" alt="">
+        <div class="p-2.5 inline-block justify-center rounded-md bg-white m-3 w-72 max-sm:block ">
+            <img class="rounded-full w-12 block ml-auto mr-auto" src="assets/img/user2.png" alt="">
             <p class="font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, possimus!</p>
         </div>
     </div>
@@ -286,7 +307,8 @@
 
     <!-- contact form -->
     <section class="">
-        <div class="border-2 border-gray-500 py-8 px-4 mx-auto max-w-screen-md mb-2 dark:bg-slate-900 md:border-none">
+        <div
+            class="border-2 border-gray-500 py-8 px-4 mx-auto max-w-screen-md mb-2 dark:bg-slate-900 max-md:border-none">
             <h2 id="contact" class="mb-4 text-4xl font-black text-center text-white">Contact Us
             </h2>
             <p class="mb-8 text-center sm:text-xl">Got a technical
@@ -304,11 +326,11 @@
                     <label for="subject"
                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
                     <input type="text" id="subject"
-                        class="block p-3 w-full text-sm bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 rounded-lg shadow-sm-light"
+                        class="block p-3 w-full text-sm bg-gray-700 border-gray-600 placeholder-gray-400 text-white rounded-lg "
                         placeholder="Let us know how we can help you" required>
                 </div>
                 <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-400">Your
                         message</label>
                     <textarea id="message" rows="6"
                         class="block rounded-lg p-2.5 w-full text-sm bg-gray-700 border-gray-600 placeholder-gray-400 text-gray-900"
