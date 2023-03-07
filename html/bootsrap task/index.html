@@ -37,28 +37,28 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link text-capitalize" href="#">About us</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#">Gallery</a>
+                        </li>
+                    </a>
                     <li class="nav-item">
-                        <a class="nav-link text-capitalize" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-capitalize" href="#">contact us</a>
+                        <a class="nav-link text-capitalize" href="#contact">contact us</a>
                     </li>
 
                 </ul>
@@ -215,9 +215,10 @@
                 <div class="col-md-4 col-10 col-xxl-4 mx-auto">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4"><a href="blog.html">
                                 <img src="https://source.unsplash.com/224x467?ferrari" class="img-fluid rounded-start"
-                                    alt="Check img link">
+                                alt="Check img link">
+                            </a>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -441,7 +442,7 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's
                     content.</p>
-                <button href="" class="btn btn-primary">Go somewhere</button>
+                <button class="btn btn-primary">Go somewhere</button>
             </div>
         </div>
         <div class="card me-5" style="width: 18rem;">
@@ -455,9 +456,157 @@
             </div>
         </div>
     </div>
+    <!-- location, map  -->
+    <div class="d-block m-auto mb-4 bg-success-subtle border rounded mt-5" style="width: 90%;">
+        <!-- <h1 id="address" class="text-center">address</h1> -->
+        <h1 class="display-4 text-center">address</h1>
+        <hr class="w-25 mx-auto">
+        <iframe class="d-block m-auto pb-3 rounded-start" style="width: 90%; height: 400px;"
+            src="https://maps.google.com/maps?q=YourLocation&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+    </div>
+
+
+    <!-- contact form -->
+    <div class="m-auto rounded bg-body-secondary p-4" style="width: 70vw;" id="contact">
+        <h1>Contact Form</h1>
+        <br>
+        <form>
+            <label for="fname">First Name</label>
+            <input class="w-100 p-2 border border-success rounded mt-2 mb-4" type="text" id="fname" name="firstname"
+                placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input class="w-100 p-2 border border-success rounded mt-2 mb-4" type="text" id="lname" name="lastname"
+                placeholder="Your last name..">
+            <label for="email">Your E-mail</label>
+            <input class="w-100 p-2 border border-success rounded mt-2 mb-4" type="email" placeholder="name@gmail.com">
+            <label for="country">City</label>
+            <select class="w-100 p-2 border border-success rounded mt-2 mb-4" id="country" name="country">
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="surat">Surat</option>
+                <option value="jamnagar">Jamnagar</option>
+                <option value="porbandar">Porbandar</option>
+                <option value="gandhinagar">Gandhinagar</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea class="w-100 p-2 border border-success rounded mt-2 mb-4" id="subject" name="subject"
+                placeholder="Write something.." style="height:200px"></textarea>
+
+            <input class="btn btn-success" type="submit" value="Submit">
+        </form>
+    </div>
+
+<!-- feedback, review testominal -->
+<section class="bg-success-subtle">
+    <div class="row d-flex justify-content-center mt-5">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="mb-4">Testimonials</h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+          numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+          quisquam eum porro a pariatur veniam.
+        </p>
+      </div>
+    </div>
+  
+    <div class="row text-center">
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="img/test1.jpg"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Maria Smantha</h5>
+        <h6 class="text-primary mb-3">Web Developer</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+          tenetur.
+        </p>
+        <!-- <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+          </li>
+        </ul> -->
+      </div>
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="img/test2.jpg"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Lisa Cudrow</h5>
+        <h6 class="text-primary mb-3">Graphic Designer</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+        </p>
+        <!-- <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+        </ul> -->
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="img/test3.jpg"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">John Smith</h5>
+        <h6 class="text-primary mb-3">Marketing Specialist</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+          dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+        </p>
+        <!-- <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="far fa-star fa-sm text-warning"></i>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </section>
+
 
     <!-- Footer -->
-    <div>
+    <div class="mt-5">
         <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
@@ -468,7 +617,7 @@
                 <!-- Left -->
 
                 <!-- Right -->
-                <div>
+                <!-- <div>
                     <a href="" class="text-white me-4">
                         <i class="fab fa-facebook-f"></i>
                     </a>
@@ -487,7 +636,7 @@
                     <a href="" class="text-white me-4">
                         <i class="fab fa-github"></i>
                     </a>
-                </div>
+                </div> -->
 
             </section>
 
@@ -498,7 +647,7 @@
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <!-- Content -->
-                            <h6 class="text-uppercase fw-bold">Company name</h6>
+                            <h6 class="text-uppercase fw-bold">Yassar khokhar</h6>
                             <hr class="mb-4 mt-0 d-inline-block mx-auto"
                                 style="width: 60px; background-color: #7c4dff; height: 2px" />
                             <p>
